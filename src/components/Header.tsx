@@ -22,7 +22,7 @@ const Header = ({ setCreateProfile }: Props) => {
               type="text"
               placeholder="Buscar"
             />
-            <button className="absolute ml-[9.9rem] mt-1">
+            <button className="absolute ml-[9.5rem] mt-1">
               <BsSearch size={22} color="red" />
             </button>
           </form>
