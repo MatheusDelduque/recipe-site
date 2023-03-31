@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { BiSearchAlt, BiUser } from "react-icons/bi";
+import { BsSearch, BsPerson } from "react-icons/bs";
 
 interface Props {
   setCreateProfile: () => void;
@@ -14,7 +14,7 @@ const Header = ({ setCreateProfile }: Props) => {
         </div>
         <div className="mr-20 flex w-1/2 flex-row-reverse">
           <button onClick={() => setCreateProfile()}>
-            <BiUser size={30} color="red" />
+            <BsPerson size={30} color="red" />
           </button>
           <form className="mr-10 flex flex-row rounded-3xl bg-white">
             <input
@@ -22,11 +22,9 @@ const Header = ({ setCreateProfile }: Props) => {
               type="text"
               placeholder="Buscar"
             />
-            <BiSearchAlt
-              size={30}
-              color="red"
-              className="absolute ml-[9.5rem]"
-            />
+            <button className="absolute ml-[9.9rem] mt-1">
+              <BsSearch size={22} color="red" />
+            </button>
           </form>
         </div>
       </div>
